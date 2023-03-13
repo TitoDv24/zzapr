@@ -1,6 +1,5 @@
 package lesson03;
 
-import java.util.Arrays;
 
 public class ArraySorting {
 	private int[] baseArray;
@@ -15,12 +14,25 @@ public class ArraySorting {
 	public int[] sortedArray() {
 		int[] ascSortArray = new int[this.baseArray.length];
 		
+		
+		
 		for(int i=0; i<ascSortArray.length;i++ ) {
 			ascSortArray[i]=this.baseArray[i];			
 		}
-		
-		Arrays.sort(ascSortArray);
-		
+		        int lowest;
+		        int lowestIndex;
+		        for (int i = 0; i < ascSortArray.length; i++){
+		            lowestIndex = i;
+		            lowest = ascSortArray[i];
+		            for (int j = (i + 1); j < ascSortArray.length; j++){
+		                if(lowest >= ascSortArray[j]){
+		                    lowest = ascSortArray[j];
+		                    lowestIndex = j;
+		                }
+		            }
+		            ascSortArray[lowestIndex] = ascSortArray[i];
+		            ascSortArray[i] = lowest;
+		        }
 		
 		return ascSortArray;
 	}
