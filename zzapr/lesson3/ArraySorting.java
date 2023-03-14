@@ -1,4 +1,4 @@
-package lesson03;
+package zzapr.lesson3;
 
 
 public class ArraySorting {
