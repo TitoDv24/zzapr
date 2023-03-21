@@ -1,17 +1,40 @@
 package zzapr.zzapr.lesson4;
 
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Main {
 	
 	public static void main(String[] args) {
-		Arrays matrixA = new Arrays(4, 1);
-		matrixA.generateRandomElements(-20, +20);
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("Enter the number of rows for matrix A: ");
+		int numberOfRowsA = scanner.nextInt();
+
+		System.out.print("Enter the number of columns for matrix A: ");
+		int numberOfColumnsA = scanner.nextInt();
+
+		System.out.print("Enter the number of rows for matrix B: ");
+		int numberOfRowsB = scanner.nextInt();
+
+		System.out.print("Enter the number of columns for matrix B: ");
+		int numberOfColumnsB = scanner.nextInt();
+		Arrays matrixA = new Arrays(numberOfRowsA, numberOfColumnsA);
+
+		System.out.print("Enter the minimum value of the random range: ");
+		int start = scanner.nextInt();
+
+		System.out.print("Enter the maximum value of the random range: ");
+		int stop = scanner.nextInt();
+		matrixA.generateRandomElements(start, stop);
 		System.out.println("Matrix A:");
 		System.out.println(matrixA);
 
-		Arrays matrixB = new Arrays(1,4);
-		matrixB.generateRandomElements(-20, +20);
+		Arrays matrixB = new Arrays(numberOfRowsB, numberOfColumnsB);
+
+
+
+		matrixB.generateRandomElements(start, stop);
 
 		System.out.println("Matrix B:");
 		System.out.println(matrixB);

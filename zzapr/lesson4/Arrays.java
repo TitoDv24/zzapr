@@ -17,26 +17,17 @@ public class Arrays {
 	void generateRandomElements(int from, int to) {
 		for (int i = 0; i < elements.length; i++) { //iterate rows
 			for (int j = 0; j < elements[0].length; j++) { //iterate columns
-				elements[i][j] = RandomGenerator.getRandomNumber(0, 20);
+				elements[i][j] = RandomGenerator.getRandomNumber(from,to);
 			}
 		}
 	}
 
 	public boolean dimensionAreTheSame(Arrays anotherMatrix) {
-		boolean result = false;
 
-		if (elements.length == anotherMatrix.elements.length && elements[0].length == anotherMatrix.elements[0].length) {
-			result = true;
-		}
-
-		return result;
+		return elements.length == anotherMatrix.elements.length && elements[0].length == anotherMatrix.elements[0].length;
 	}
 	public boolean canMultiplyMatrices(Arrays anotherMatrix) {
-		boolean resultM = false;
-		if (anotherMatrix.elements.length == elements[0].length){
-			resultM = true;
-		}
-		return (resultM);
+		return (anotherMatrix.elements.length == elements[0].length);
 	}
 	@Override
 	public String toString() {
