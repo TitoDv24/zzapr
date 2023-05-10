@@ -1,4 +1,4 @@
-package zzapr.zzapr.lesson5;
+package zzapr.zzapr.lesson6;
 
 public class Garage {
     final static int MAX_CARS_GARAGE = 100;

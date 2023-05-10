@@ -1,4 +1,4 @@
-package zzapr.zzapr.lesson5;
+package zzapr.zzapr.lesson6;
 
 public class Car {
 
