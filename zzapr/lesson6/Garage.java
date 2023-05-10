@@ -9,10 +9,18 @@ public class Garage {
 
     public void addCarToGarage(Car car) {
         if (carCounter < MAX_CARS_GARAGE && car != null) {
-            cars[carCounter] = car;
+            if (car instanceof ICECar) {
+                cars[carCounter] = (ICECar) car;
+            } else if (car instanceof BEVCar) {
+                cars[carCounter] = (BEVCar) car;
+            } else if (car instanceof HEVcar) {
+                cars[carCounter] = (HEVcar) car;
+            } else {
+                cars[carCounter] = car;
+            }
             carCounter++;
         } else {
-            System.out.println("Garage is full or" + "car is null !!!");
+            System.out.println("Garage is full or car is null !!!");
         }
 
     }

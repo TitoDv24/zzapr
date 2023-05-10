@@ -1,6 +1,6 @@
 package zzapr.zzapr.lesson6;
 
-public class Car {
+public abstract class Car {
 
     private String manufacturer;
 
