@@ -7,7 +7,6 @@ public class GarageMain {
 
         Car car01 = new Car("Fiat", "500", 10000, 105000);
 
-
         Car car02 = new Car("Skoda", "Fabia", 8000, 30895);
 
         Car car03 = new Car("Sandero", "Dacia", 9000, 89000);

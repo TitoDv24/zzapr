@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
 	
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in); //recalling the class Scanner, and declaring the object scanner;
 
 		System.out.print("Enter the number of rows for matrix A: ");
 		int numberOfRowsA = scanner.nextInt();
