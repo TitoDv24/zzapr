@@ -4,9 +4,9 @@ package zzapr.zzapr.lesson3;
 public class ArraySorting {
 	private int[] baseArray;
 	
-	public ArraySorting(int lenght, int min, int max) {
-		this.baseArray =  new int[lenght];
-		for(int i=0; i < lenght; i++) {
+	public ArraySorting(int length, int min, int max) {
+		this.baseArray =  new int[length];
+		for(int i=0; i < length; i++) {
 			this.baseArray[i]= (int) Math.floor(Math.random() *(max - min + 1) + min); 
 		}
 	}

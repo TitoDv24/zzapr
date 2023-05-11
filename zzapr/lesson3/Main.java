@@ -2,11 +2,11 @@ package zzapr.zzapr.lesson3;
 
 public class Main {
 	public static void main(String[] args) {
-		int lenght = 10;		
+		int length = 10;
 		int min=0;
 		int max=100;
 		
-		ArraySorting arrayObject = new ArraySorting(lenght, min, max);
+		ArraySorting arrayObject = new ArraySorting(length, min, max);
 		
 		arraytoString(arrayObject.getBaseArray());
 		

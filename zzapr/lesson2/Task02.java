@@ -1,4 +1,4 @@
-package zzapr.lesson2;
+package zzapr.zzapr.lesson2;
 
 import java.util.Scanner;
 public class Task02 {
