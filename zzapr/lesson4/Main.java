@@ -34,7 +34,7 @@ public class Main {
 
 
 
-		matrixB.generateRandomElements(start, stop);
+		matrixB.generateRandomElements(start, stop); //methods overloading
 
 		System.out.println("Matrix B:");
 		System.out.println(matrixB);
